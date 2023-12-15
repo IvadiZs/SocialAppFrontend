@@ -224,7 +224,7 @@ export function MediaPostList() {
                         />
                         <h1>{imageIndex + 8}.</h1>
                         </>
-                    )}  + 1
+                    )}
                 </div>
 
                 {/*IX.*/}
