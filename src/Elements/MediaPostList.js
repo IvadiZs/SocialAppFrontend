@@ -16,21 +16,54 @@ export function MediaPostList() {
     {/*Teszt adatok*/}
     useEffect(() => {
         setImages([
-            require(`./Tesztadatok-torolheto/rat1.gif`),
-            require(`./Tesztadatok-torolheto/rat2.gif`),
-            require(`./Tesztadatok-torolheto/rat3.gif`),
-            require(`./Tesztadatok-torolheto/rat4.gif`),
-            require(`./Tesztadatok-torolheto/rat5.gif`),
-            require(`./Tesztadatok-torolheto/rat1.gif`),
-            require(`./Tesztadatok-torolheto/rat2.gif`),
-            require(`./Tesztadatok-torolheto/rat3.gif`),
-            require(`./Tesztadatok-torolheto/rat4.gif`),
-            require(`./Tesztadatok-torolheto/rat5.gif`),
-            require(`./Tesztadatok-torolheto/rat1.gif`),
-            require(`./Tesztadatok-torolheto/rat2.gif`),
-            require(`./Tesztadatok-torolheto/rat3.gif`),
-            require(`./Tesztadatok-torolheto/rat4.gif`),
-            require(`./Tesztadatok-torolheto/rat5.gif`),
+            {
+                Title: "1. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "2. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "3. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "4. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "5. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "6. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "7. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "8. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "9. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "10. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "11. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "12. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
         ]);
     }, []);
 
@@ -44,8 +77,9 @@ export function MediaPostList() {
                 <div>
                     {images.length > imageIndex && (
                         <>
+                        <h1>{images[imageIndex].Title}</h1>
                         <img
-                            src={images[imageIndex]}
+                            src={images[imageIndex].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"
@@ -61,8 +95,9 @@ export function MediaPostList() {
                 <div>
                     {images.length > imageIndex + 1 && (
                         <>
+                        <h1>{images[imageIndex + 1].Title}</h1>
                         <img
-                            src={images[imageIndex + 1]}
+                            src={images[imageIndex + 1].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"
@@ -78,8 +113,9 @@ export function MediaPostList() {
                 <div>
                     {images.length > imageIndex + 2 && (
                         <>
+                        <h1>{images[imageIndex + 2].Title}</h1>
                         <img
-                            src={images[imageIndex + 2]}
+                            src={images[imageIndex + 2].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"
@@ -100,8 +136,9 @@ export function MediaPostList() {
                 <div>
                     {images.length > imageIndex + 3 && (
                         <>
+                        <h1>{images[imageIndex + 3].Title}</h1>
                         <img
-                            src={images[imageIndex + 3]}
+                            src={images[imageIndex + 3].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"
@@ -117,8 +154,9 @@ export function MediaPostList() {
                 <div>
                     {images.length > imageIndex + 4 && (
                         <>
+                        <h1>{images[imageIndex + 4].Title}</h1>
                         <img
-                            src={images[imageIndex + 4]}
+                            src={images[imageIndex + 4].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"
@@ -134,8 +172,9 @@ export function MediaPostList() {
                 <div>
                     {images.length > imageIndex + 5 && (
                         <>
+                        <h1>{images[imageIndex + 5].Title}</h1>
                         <img
-                            src={images[imageIndex + 5]}
+                            src={images[imageIndex + 5].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"
@@ -156,8 +195,9 @@ export function MediaPostList() {
                 <div>
                     {images.length > imageIndex + 6 && (
                         <>
+                        <h1>{images[imageIndex + 6].Title}</h1>
                         <img
-                            src={images[imageIndex + 6]}
+                            src={images[imageIndex + 6].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"
@@ -173,8 +213,9 @@ export function MediaPostList() {
                 <div>
                     {images.length > imageIndex + 7 && (
                         <>
+                        <h1>{images[imageIndex + 7].Title}</h1>
                         <img
-                            src={images[imageIndex + 7]}
+                            src={images[imageIndex + 7].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"
@@ -183,15 +224,16 @@ export function MediaPostList() {
                         />
                         <h1>{imageIndex + 8}.</h1>
                         </>
-                    )} 
+                    )}  + 1
                 </div>
 
                 {/*IX.*/}
                 <div>
                     {images.length > imageIndex + 8 && (
                         <>
+                        <h1>{images[imageIndex + 8].Title}</h1>
                         <img
-                            src={images[imageIndex + 8]}
+                            src={images[imageIndex + 8].Image}
                             style={{
                             width: "20vh",
                             height: "20vh"

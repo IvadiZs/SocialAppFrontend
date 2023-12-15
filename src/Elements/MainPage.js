@@ -37,11 +37,26 @@ export function MainPage() {
 
     useEffect(() => {
         setImages([
-            require(`./Tesztadatok-torolheto/rat1.gif`),
-            require(`./Tesztadatok-torolheto/rat2.gif`),
-            require(`./Tesztadatok-torolheto/rat3.gif`),
-            require(`./Tesztadatok-torolheto/rat4.gif`),
-            require(`./Tesztadatok-torolheto/rat5.gif`),
+            {
+                Title: "1. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat1.gif`),
+            },
+            {
+                Title: "2. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat2.gif`),
+            },
+            {
+                Title: "3. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat3.gif`),
+            },
+            {
+                Title: "4. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat4.gif`),
+            },
+            {
+                Title: "5. Kép",
+                Image: require(`./Tesztadatok-torolheto/rat5.gif`),
+            },
         ]);
 
         setForum([
@@ -68,11 +83,26 @@ export function MainPage() {
         ]);
 
         setLinks([
-            "https://link1.com/",
-            "https://link2.com/",
-            "https://link3.com/",
-            "https://link4.com/",
-            "https://link5.com/",
+            {
+                Title: "Link no1",
+                Link: "https://link1.com/"
+            },
+            {
+                Title: "Link no2",
+                Link: "https://link2.com/"
+            },
+            {
+                Title: "Link no3",
+                Link: "https://link3.com/"
+            },
+            {
+                Title: "Link no4",
+                Link: "https://link4.com/"
+            },
+            {
+                Title: "Link no5",
+                Link: "https://link5.com/"
+            },
         ]);
 
     }, [])
@@ -99,8 +129,9 @@ export function MainPage() {
                     <div>
                         {images.length > imageIndex && (
                             <>
+                            <h1>{images[imageIndex].Title}</h1>
                             <img
-                                src={images[imageIndex]}
+                                src={images[imageIndex].Image}
                                 style={{
                                 width: "20vh",
                                 height: "20vh"
@@ -116,8 +147,9 @@ export function MainPage() {
                     <div>
                     {images.length > imageIndex + 1 && (
                             <>
+                            <h1>{images[imageIndex + 1].Title}</h1>
                             <img
-                                src={images[imageIndex + 1]}
+                                src={images[imageIndex + 1].Image}
                                 style={{
                                 width: "20vh",
                                 height: "20vh"
@@ -133,8 +165,9 @@ export function MainPage() {
                     <div>
                     {images.length > imageIndex + 2 && (
                             <>
+                            <h1>{images[imageIndex + 2].Title}</h1>
                             <img
-                                src={images[imageIndex + 2]}
+                                src={images[imageIndex + 2].Image}
                                 style={{
                                 width: "20vh",
                                 height: "20vh"
@@ -228,7 +261,8 @@ export function MainPage() {
                 <div>
                     {(links.length > linkIndex) && (
                         <>
-                            <a href = {links[linkIndex]}>{links[linkIndex]}</a>
+                            <h1>{links[linkIndex].Title}</h1>
+                            <a href = {links[linkIndex]}>{links[linkIndex].Link}</a>
                         </>
                     )}
                 </div>
@@ -237,7 +271,8 @@ export function MainPage() {
                 <div>
                     {(links.length > linkIndex + 1) && (
                         <>
-                            <a href = {links[linkIndex + 1]}>{links[linkIndex + 1]}</a>
+                            <h1>{links[linkIndex + 1].Title}</h1>
+                            <a href = {links[linkIndex + 1]}>{links[linkIndex + 1].Link}</a>
                         </>
                     )}
                 </div>
@@ -246,7 +281,8 @@ export function MainPage() {
                 <div>
                     {(links.length > linkIndex + 2) && (
                         <>
-                            <a href = {links[linkIndex + 2]}>{links[linkIndex + 2]}</a>
+                            <h1>{links[linkIndex + 2].Title}</h1>
+                            <a href = {links[linkIndex + 2]}>{links[linkIndex + 2].Link}</a>
                         </>
                     )}
                 </div>

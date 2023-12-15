@@ -15,20 +15,59 @@ export function LinkPostList() {
 
     useEffect(() => {
         setLinks([
-            "https://link1.com/",
-            "https://link2.com/",
-            "https://link3.com/",
-            "https://link4.com/",
-            "https://link5.com/",
-            "https://link6.com/",
-            "https://link7.com/",
-            "https://link8.com/",
-            "https://link9.com/",
-            "https://link10.com/",
-            "https://link11.com/",
-            "https://link12.com/",
-            "https://link13.com/",
-        ]);
+            {
+              Title: "Link no1",
+              Link: "https://link1.com/"
+            },
+            {
+              Title: "Link no2",
+              Link: "https://link2.com/"
+            },
+            {
+              Title: "Link no3",
+              Link: "https://link3.com/"
+            },
+            {
+              Title: "Link no4",
+              Link: "https://link4.com/"
+            },
+            {
+              Title: "Link no5",
+              Link: "https://link5.com/"
+            },
+            {
+              Title: "Link no6",
+              Link: "https://link6.com/"
+            },
+            {
+              Title: "Link no7",
+              Link: "https://link7.com/"
+            },
+            {
+              Title: "Link no8",
+              Link: "https://link8.com/"
+            },
+            {
+              Title: "Link no9",
+              Link: "https://link9.com/"
+            },
+            {
+              Title: "Link no10",
+              Link: "https://link10.com/"
+            },
+            {
+              Title: "Link no11",
+              Link: "https://link11.com/"
+            },
+            {
+              Title: "Link no12",
+              Link: "https://link12.com/"
+            },
+            {
+              Title: "Link no13",
+              Link: "https://link13.com/"
+            }
+          ]);
     }, []);
 
     return(
@@ -41,7 +80,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex) && (
                         <>
-                            <a href = {links[linkIndex]}>{links[linkIndex]}</a>
+                            <h1>{links[linkIndex].Title}</h1>
+                            <a href = {links[linkIndex].Link}>{links[linkIndex].Link}</a>
                         </>
                     )}
                 </div>
@@ -50,7 +90,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex + 1) && (
                         <>
-                            <a href = {links[linkIndex + 1]}>{links[linkIndex + 1]}</a>
+                            <h1>{links[linkIndex + 1].Title}</h1>
+                            <a href = {links[linkIndex + 1].Link}>{links[linkIndex + 1].Link}</a>
                         </>
                     )}
                 </div>
@@ -59,7 +100,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex + 2) && (
                         <>
-                            <a href = {links[linkIndex + 2]}>{links[linkIndex + 2]}</a>
+                            <h1>{links[linkIndex + 2].Title}</h1>
+                            <a href = {links[linkIndex + 2].Link}>{links[linkIndex + 2].Link}</a>
                         </>
                     )}
                 </div>
@@ -73,7 +115,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex + 3) && (
                         <>
-                            <a href = {links[linkIndex + 3]}>{links[linkIndex + 3]}</a>
+                            <h1>{links[linkIndex + 3].Title}</h1>
+                            <a href = {links[linkIndex + 3].Link}>{links[linkIndex + 3].Link}</a>
                         </>
                     )}
                 </div>
@@ -82,7 +125,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex + 4) && (
                         <>
-                            <a href = {links[linkIndex + 4]}>{links[linkIndex + 4]}</a>
+                            <h1>{links[linkIndex + 4].Title}</h1>
+                            <a href = {links[linkIndex + 4].Link}>{links[linkIndex + 4].Link}</a>
                         </>
                     )}
                 </div>
@@ -91,7 +135,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex + 5) && (
                         <>
-                            <a href = {links[linkIndex + 5]}>{links[linkIndex + 5]}</a>
+                            <h1>{links[linkIndex + 5].Title}</h1>
+                            <a href = {links[linkIndex + 5].Link}>{links[linkIndex + 5].Link}</a>
                         </>
                     )}
                 </div>
@@ -105,7 +150,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex + 6) && (
                         <>
-                            <a href = {links[linkIndex + 6]}>{links[linkIndex + 6]}</a>
+                            <h1>{links[linkIndex + 6].Title}</h1>
+                            <a href = {links[linkIndex + 6].Link}>{links[linkIndex + 6].Link}</a>
                         </>
                     )}
                 </div>
@@ -114,7 +160,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex + 7) && (
                         <>
-                            <a href = {links[linkIndex + 7]}>{links[linkIndex + 7]}</a>
+                            <h1>{links[linkIndex + 7].Title}</h1>
+                            <a href = {links[linkIndex + 7].Link}>{links[linkIndex + 7].Link}</a>
                         </>
                     )}
                 </div>
@@ -123,7 +170,8 @@ export function LinkPostList() {
                 <div>
                     {(links.length > linkIndex + 8) && (
                         <>
-                            <a href = {links[linkIndex + 8]}>{links[linkIndex + 8]}</a>
+                            <h1>{links[linkIndex + 8].Title}</h1>
+                            <a href = {links[linkIndex + 8].Link}>{links[linkIndex + 8].Link}</a>
                         </>
                     )}
                 </div>
